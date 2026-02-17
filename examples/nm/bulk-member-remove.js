@@ -47,7 +47,10 @@ async function removeMember(user, complete = false) {
     } else {
       // Remove from Notion Mastery groups but keep in workspace
       await removeMemberFromGroup('7d3e5712-a873-43a8-a4b5-2ab138a9e2ea', NMID);
+      // Notion Mastery Membership
       await removeMemberFromGroup('9e7b05bc-e9e6-4b7a-8246-f8b1af875ea2', NMID);
+      // Architecting Workspaces
+      await removeMemberFromGroup('0a5337ff-8343-4da6-a285-fe5c48b9660f', NMID);
     }
   } else {
     console.log(RED_COLOR, `Could not find ${memberName} <${email}> (${NMID})`);
