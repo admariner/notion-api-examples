@@ -46,7 +46,7 @@ async function removeMemberFromGroup(groupId, userId) {
       ],
     });
 
-    console.log(`${status}: ${statusText} - ${userId}`);
+    console.log(`${status}: ${statusText} Removed ${userId} from ${groupId}`);
   } catch (e) {
     console.log(RED_COLOR, 'Error', e);
   }
@@ -130,7 +130,7 @@ async function getCache(fileName) {
       fs.readFileSync(cachePath, {
         encoding: 'utf-8',
         flag: 'r',
-      })
+      }),
     );
   }
 }
