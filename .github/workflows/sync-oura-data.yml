@@ -4,8 +4,8 @@ on:
     branches:
       - sync-oura-data
   schedule:
-    # 06:00 UTC is 23:00 Pacific Time
-    - cron: '0 6 * * *'
+    # 18:00 UTC is 11:00 Pacific Time
+    - cron: '0 18 * * *'
 jobs:
   sync:
     runs-on: ubuntu-latest
